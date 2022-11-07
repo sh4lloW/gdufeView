@@ -6,8 +6,8 @@ import android.view.animation.AccelerateInterpolator
 import android.view.animation.DecelerateInterpolator
 import android.view.animation.Interpolator
 import android.widget.ImageView
-import com.example.gdufeview.UI.AnimatorListener
-import com.example.gdufeview.UI.Utils
+import com.example.gdufeview.ui.AnimatorListener
+import com.example.gdufeview.ui.Utils
 import com.nineoldandroids.animation.Animator
 import com.nineoldandroids.view.ViewHelper
 import com.nineoldandroids.view.ViewPropertyAnimator
@@ -16,7 +16,7 @@ class DetailActivity : AbstractDetailActivity() {
     private var animatedHero: ImageView? = null
     override fun postCreate() {
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
-        animatedHero = findViewById<ImageView>(R.id.animated_photo)
+        animatedHero = findViewById(R.id.animated_photo)
         ViewHelper.setAlpha(container, 0f)
         animatedHero!!.setImageBitmap(photo)
     }

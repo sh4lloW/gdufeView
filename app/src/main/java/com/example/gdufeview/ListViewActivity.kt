@@ -8,7 +8,7 @@ import android.view.View
 import android.view.ViewTreeObserver.OnGlobalLayoutListener
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.gdufeview.UI.Utils
+import com.example.gdufeview.ui.Utils
 import com.nineoldandroids.view.ViewHelper
 
 class ListViewActivity : AppCompatActivity() {
@@ -77,7 +77,10 @@ class ListViewActivity : AppCompatActivity() {
                     .putExtra("lng", -122.503065)
                     .putExtra("zoom", 15.0f)
                     .putExtra("title", "第一教学楼")
-                    .putExtra("description", resources.getText(R.string.descript_first_teaching_building))
+                    .putExtra(
+                        "description",
+                        resources.getText(R.string.descript_first_teaching_building)
+                    )
                     .putExtra("photo", R.drawable.first_teaching_building)
                 resId = R.id.card_photo_2
             }
@@ -86,7 +89,10 @@ class ListViewActivity : AppCompatActivity() {
                     .putExtra("lng", -111.374438)
                     .putExtra("zoom", 11.0f)
                     .putExtra("title", "实验楼")
-                    .putExtra("description", resources.getText(R.string.descript_laboratory_building))
+                    .putExtra(
+                        "description",
+                        resources.getText(R.string.descript_laboratory_building)
+                    )
                     .putExtra("photo", R.drawable.laboratory_building)
                 resId = R.id.card_photo_3
             }
@@ -95,7 +101,10 @@ class ListViewActivity : AppCompatActivity() {
                     .putExtra("lng", -118.1604282)
                     .putExtra("zoom", 9.0f)
                     .putExtra("title", "综合楼")
-                    .putExtra("description", resources.getText(R.string.descript_comprehensive_building))
+                    .putExtra(
+                        "description",
+                        resources.getText(R.string.descript_comprehensive_building)
+                    )
                     .putExtra("photo", R.drawable.comprehensive_building)
                 resId = R.id.card_photo_4
             }

@@ -1,4 +1,4 @@
-package com.example.gdufeview.UI
+package com.example.gdufeview.ui
 
 import com.nineoldandroids.animation.Animator
 

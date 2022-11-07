@@ -1,4 +1,4 @@
-package com.example.gdufeview.UI
+package com.example.gdufeview.ui
 
 import android.content.Context
 import android.graphics.*
@@ -96,7 +96,7 @@ class SpotlightView(context: Context, attrs: AttributeSet?) :
                     resources, maskId
                 )
             )
-            Log.d("Spotlight", "c=" + mMask!!.getConfig())
+            Log.d("Spotlight", "c=" + mMask!!.config)
         } catch (e: Exception) {
             Log.e("Spotlight", "Error while creating the view:", e)
         } finally {

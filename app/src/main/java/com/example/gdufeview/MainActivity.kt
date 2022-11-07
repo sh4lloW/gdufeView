@@ -12,7 +12,7 @@ import com.royrodriguez.transitionbutton.TransitionButton
 
 class MainActivity : AppCompatActivity() {
     private var gyroscopeObserver: GyroscopeObserver? = null
-    private var frontButton: TransitionButton?= null
+    private var frontButton: TransitionButton? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -28,12 +28,12 @@ class MainActivity : AppCompatActivity() {
                 val isSuccessful = true;
                 if (isSuccessful) {
                     frontButton!!.stopAnimation(TransitionButton.StopAnimationStyle.EXPAND)
-                        {
-                            val intent = Intent(baseContext, ListViewActivity::class.java)
-                            intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
-                            startActivity(intent)
-                        }
-                }else {
+                    {
+                        val intent = Intent(baseContext, ListViewActivity::class.java)
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
+                        startActivity(intent)
+                    }
+                } else {
                     frontButton!!.stopAnimation(TransitionButton.StopAnimationStyle.SHAKE, null)
                 }
             }, 1500)

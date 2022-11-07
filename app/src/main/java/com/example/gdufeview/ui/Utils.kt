@@ -1,28 +1,29 @@
-package com.example.gdufeview.UI
+package com.example.gdufeview.ui
 
 import android.content.res.Resources
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
-import android.graphics.drawable.Drawable
-import android.os.Build
 import android.view.View
 import android.view.ViewTreeObserver
-import android.widget.ImageView
 
 object Utils {
-    private fun calculateInSampleSize(options: BitmapFactory.Options, reqWidth: Int, reqHeight: Int): Int {
-    val height = options.outHeight
-    val width = options.outWidth
-    var inSampleSize = 1
-    if (height > reqHeight || width > reqWidth) {
-        val halfHeight = height / 2
-        val halfWidth = width / 2
-        while (halfHeight / inSampleSize > reqHeight && halfWidth / inSampleSize > reqWidth) {
-            inSampleSize *= 2
+    private fun calculateInSampleSize(
+        options: BitmapFactory.Options,
+        reqWidth: Int,
+        reqHeight: Int
+    ): Int {
+        val height = options.outHeight
+        val width = options.outWidth
+        var inSampleSize = 1
+        if (height > reqHeight || width > reqWidth) {
+            val halfHeight = height / 2
+            val halfWidth = width / 2
+            while (halfHeight / inSampleSize > reqHeight && halfWidth / inSampleSize > reqWidth) {
+                inSampleSize *= 2
+            }
         }
+        return inSampleSize
     }
-    return inSampleSize
-}
 
     fun decodeSampledBitmapFromResource(
         res: Resources?,
@@ -38,7 +39,10 @@ object Utils {
         return BitmapFactory.decodeResource(res, resId, options)
     }
 
-    fun removeOnGlobalLayoutListenerCompat(v: View, listener: ViewTreeObserver.OnGlobalLayoutListener?) {
+    fun removeOnGlobalLayoutListenerCompat(
+        v: View,
+        listener: ViewTreeObserver.OnGlobalLayoutListener?
+    ) {
         if (hasJellyBean()) {
             v.viewTreeObserver.removeOnGlobalLayoutListener(listener)
         } else {
@@ -47,10 +51,10 @@ object Utils {
     }
 
     private fun hasJellyBean(): Boolean {
-        return Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN
+        return true
     }
 
     fun hasLollipop(): Boolean {
-        return Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP
+        return true
     }
 }
