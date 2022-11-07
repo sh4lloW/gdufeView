@@ -3,9 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProject/gdufeView2/app/src/main/res/layout/activity_detail.xml" value="0.22826086956521738" />
         <entry key="..\:/AndroidStudioProject/gdufeView2/app/src/main/res/layout/activity_list_view.xml" value="0.1125" />
         <entry key="..\:/AndroidStudioProject/gdufeView2/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
         <entry key="..\:/AndroidStudioProject/gdufeView2/app/src/main/res/layout/activity_page.xml" value="0.22826086956521738" />
+        <entry key="..\:/AndroidStudioProject/gdufeView2/app/src/main/res/layout/card_photo.xml" value="0.22826086956521738" />
         <entry key="..\:/AndroidStudioProject/gdufeView2/app/src/main/res/layout/header_logo.xml" value="0.22826086956521738" />
       </map>
     </option>

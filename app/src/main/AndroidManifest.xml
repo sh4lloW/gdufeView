@@ -15,11 +15,11 @@
         tools:replace="android:label"
         tools:targetApi="31">
         <activity
-            android:name=".ListViewActivity"
+            android:name=".DetailActivity"
             android:exported="false" />
         <activity
-            android:name=".PageActivity"
-            android:exported="true" />
+            android:name=".ListViewActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
