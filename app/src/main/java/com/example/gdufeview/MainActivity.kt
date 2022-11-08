@@ -39,5 +39,15 @@ class MainActivity : AppCompatActivity() {
             }, 1500)
         }
     }
+
+//    override fun onResume() {
+//        super.onResume()
+//        gyroscopeObserver?.register(this)
+//    }
+//
+//    override fun onPause() {
+//        super.onPause()
+//        gyroscopeObserver?.unregister()
+//    }
 }
 
